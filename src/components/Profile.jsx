@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Faq from './Faq.jsx';
 import {
   isSignInPending,
   loadUserData,
@@ -43,7 +42,6 @@ export default class Profile extends Component {
             Logout
           </button>
         </p>
-        <Faq />
       </div> : null
     );
   }
