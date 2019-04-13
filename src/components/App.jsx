@@ -8,6 +8,12 @@ import {
   handlePendingSignIn,
   signUserOut,
 } from 'blockstack';
+import {Route, Switch
+} from 'react-router-dom';
+import NavBar from './NavBar.js'
+import Home from '../containers/Home.js'
+import DoctorContainer from '../containers/DoctorContainer.jsx'
+
 
 export default class App extends Component {
 
@@ -25,18 +31,38 @@ export default class App extends Component {
     signUserOut(window.location.origin);
   }
 
+  // <React.Fragment>
   render() {
     return (
-      <div className="site-wrapper">
-        <div className="site-wrapper-inner">
-          { !isUserSignedIn() ?
-            <Signin handleSignIn={ this.handleSignIn } />
-            : <Profile handleSignOut={ this.handleSignOut } />
-          }
-        </div>
-      </div>
-    );
+        <div className="site-wrapper">
+        <NavBar/>
+            <div className="site-wrapper-inner">
+              { !isUserSignedIn() ?
+                <Signin handleSignIn={ this.handleSignIn } />
+                :
+                <Switch>
+                  <Route path="/home" component={Home}/>
+                  <Route path="/doctors" component={DoctorContainer}/>
+
+                  <Route
+                    path='/:username?'
+                    render={
+                      routeProps => <Profile handleSignOut={ this.handleSignOut } {...routeProps} />
+                    }
+                  />
+
+                </Switch>
+              }
+            </div>
+          </div>
+    )
   }
+  // </React.Fragment>
+
+  // { !isUserSignedIn() ?
+  //     <Signin handleSignIn={ this.handleSignIn } />
+  //     : <Home/>
+  // }
 
   componentWillMount() {
     if (isSignInPending()) {
