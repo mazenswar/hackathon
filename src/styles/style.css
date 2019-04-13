@@ -26,3 +26,7 @@ body{color:#fff;text-align:center;}
 
 /* Input */
 input, textarea{color:#000;}
+
+.doctor-container{
+    padding-top: 400px ;
+}

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import DoctorCard from '../components/DoctorCard.jsx'
 import  cards  from '../helpers'
-
+import {Route, Switch} from 'react-router-dom'
 export default class DoctorContainer extends Component {
 
     constructor(props) {
@@ -10,7 +10,7 @@ export default class DoctorContainer extends Component {
             doctors: []
         }
 
-        this.getDoctorCards = this.getDoctorCards.bind(this)
+        // this.getDoctorCards = this.getDoctorCards.bind(this)
     }
 
     componentDidMount(){
@@ -32,14 +32,32 @@ export default class DoctorContainer extends Component {
 
     getDoctorCards(){
         return this.state.doctors.map(doctor => {
-            return <DoctorCard doctor={doctor}/>
+            return <DoctorCard key={doctor.id} doctor={doctor}/>
         })
     }
+    // <Switch>
+
+    showPage(renderProps){
+        console.log(renderProps);
+        // if(this.state.doctors.length > 0){
+        //     const doctorIdUrl = renderProps.match.params.id
+        //     const doctor = this.state.doctor.find(doctor){return doctor.id. === doctorIdUrl})
+        //     return <RapCard doctor={doctor} />
+        // } else {
+        //   return null
+        // }
+    }
+    // <Switch>
+    // <Route path="/doctor/:id" render={DoctorContainer}/>
+    // <Route path="/doctors" component={DoctorContainer}/>
+    // </Switch>
+
     render(){
         return(
-            <div>
+            <section className="doctor-container">
                 {this.getDoctorCards()}
-            </div>
+            </section>
         )
     }
+    // </Switch>
 }

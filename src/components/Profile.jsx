@@ -34,17 +34,17 @@ export default class Profile extends Component {
         </div>
         <h1>Hello, <span id="heading-name">{ person.name() ? person.name() : 'Nameless Person' }</span>!</h1>
         <p className="lead">
-          <button
-            className="btn btn-primary btn-lg"
-            id="signout-button"
-            onClick={ handleSignOut.bind(this) }
-          >
-            Logout
-          </button>
         </p>
       </div> : null
     );
   }
+  // <button
+  // className="btn btn-primary btn-lg"
+  // id="signout-button"
+  // onClick={ handleSignOut.bind(this) }
+  // >
+  // Logout
+  // </button>
 
   componentWillMount() {
     this.setState({

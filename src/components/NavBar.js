@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
          <div>
             <NavLink to="/home">Home Page</NavLink>
             <NavLink to="/doctors">Doctors</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
          </div>
      )
  }

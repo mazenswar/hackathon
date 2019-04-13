@@ -43,6 +43,7 @@ export default class App extends Component {
                 <Switch>
                   <Route path="/home" component={Home}/>
                   <Route path="/doctors" component={DoctorContainer}/>
+                  <Route path="/profile" component={Profile}/>
 
                   <Route
                     path='/:username?'
