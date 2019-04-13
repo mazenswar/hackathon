@@ -24,7 +24,7 @@ An app to provide access to mental health services for young professionals (age 
 	- LIST of doctors
 	- SEARCH by name
 	- FILTER by specialization/location
-	- CLICK on doctor ITEM
+	- CLICK on doctor item
 - Doctor Show Page
 	- DETAILS of doctor
 	- MESSAGE doctor through textarea
