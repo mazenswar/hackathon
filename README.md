@@ -1,7 +1,8 @@
 # AccessHealth
 
 ## Background of the Issue:
-According to National early one in five U.S. adults live with a mental illness (46.6 million in 2017). 
+According to National early one in five U.S. adults live with a mental illness (46.6 million in 2017).
+![Image description](src/images/mental-health-svcs-adults.png)
 
 ## Design Statement:
 An app to provide access to mental health services for young professionals (age 18-40) to whom access to mental health care was previously unavailable (due to financial reasons or lack of coverage).
@@ -14,23 +15,23 @@ An app to provide access to mental health services for young professionals (age 
 - Landing Page
 	- About (app/project)
 	- FAQ (with descriptions of )
-- Navbar 
+- Navbar
 	- Home
 	- Doctor List
-	- Profile 
-- Doctor List Page 
-	- LIST of doctors 
+	- Profile
+- Doctor List Page
+	- LIST of doctors
 	- SEARCH by name
-	- FILTER by specialization/location 
+	- FILTER by specialization/location
 	- CLICK on doctor ITEM
-- Doctor Show Page 
-	- DETAILS of doctor 
+- Doctor Show Page
+	- DETAILS of doctor
 	- MESSAGE doctor through textarea
 	- CALENDAR (stretch)
-- Profile 
+- Profile
 	- User details
 	- Text area to input mental health issue that needs help
-  
+
 ## Technologies Used:
 - Blockstack
 - React
