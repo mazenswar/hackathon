@@ -7,7 +7,7 @@ const Form = (props) => {
       <input type="text" value="Gender" />
       <br/>
 
-      Psychological Issues:
+      Psychological Issue(s):
       <input type="checkbox" name="psychological-issues" value="Depression">Depression</input>
       <br/>
       <input type="checkbox" name="psychological-issues" value="Anxiety">Anxiety</input>
