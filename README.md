@@ -2,6 +2,7 @@
 
 ## Background of the Issue:
 According to National early one in five U.S. adults live with a mental illness (46.6 million in 2017).
+
 ![Image description](src/images/mental-health-svcs-adults.png)
 
 ## Design Statement:
