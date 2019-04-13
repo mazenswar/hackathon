@@ -1,5 +1,8 @@
 # AccessHealth
 
+## Background of the Issue:
+According to National early one in five U.S. adults live with a mental illness (46.6 million in 2017). 
+
 ## Design Statement:
 An app to provide access to mental health services for young professionals (age 18-40) to whom access to mental health care was previously unavailable (due to financial reasons or lack of coverage).
 
