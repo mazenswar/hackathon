@@ -3,10 +3,6 @@ import React from 'react'
 const ContactDoctorForm = (props) => {
   return (
     <form>
-      Gender:
-      <input type="text" value="Gender" />
-      <br/>
-
       Reason for Contact:
       <input type="checkbox" name="reason-for-contact" value="Consultation">Consultation</input>
       <br/>
